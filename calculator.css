@@ -19,6 +19,7 @@
 }
 
 .calc__top {
+  border-radius: 6px;
   width: 45vw;
   height: 8vh;
   margin: 2vw;
@@ -60,12 +61,13 @@
   width: 4vw;
   height: 4vw;
   margin: 0.5vw;
+  padding-top: 0.4vw;
   border-radius: 4px;
   background-color: rgba(0, 0, 255, 0.39);
   border: solid 1px rgba(141, 104, 141, 0.555);
   outline: none;
-  -webkit-box-shadow: -3px 3px rgba(151, 139, 139, 0.397);
-          box-shadow: -3px 3px rgba(151, 139, 139, 0.397);
+  -webkit-box-shadow: -3px 3px 3px rgba(151, 139, 139, 0.397);
+          box-shadow: -3px 3px 3px rgba(151, 139, 139, 0.397);
 }
 
 .calc__btn:active {
