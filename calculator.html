@@ -9,34 +9,44 @@
 <body>
     <section class="calc">
         <header class="calc__top">
-            <p id="demo"  class="calc__top-display"></p>
+            <p class="calc__top-display">
+                <span class="calc__diplay-pos calc__diplay-pos--nine"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--eight"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--seven"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--six"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--five"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--four"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--three"></span>
+                <span class="calc__diplay-pos calc__diplay-pos--two"></span>
+                <span  id="demo" class="calc__diplay-pos calc__diplay-pos--one"></span>
+            </p>
         </header>
         <main class="calc__middle">
             <section class="calc__middle-flex">
-                <button onclick="" class="calc__btn">1</button>
-                <button onclick="" class="calc__btn">2</button>
-                <button onclick="" class="calc__btn">3</button>
-                <button onclick="" class="calc__btn">4</button>
-                <button onclick="" class="calc__btn">5</button>
-                <button onclick="" class="calc__btn">6</button>
-                <button onclick="" class="calc__btn">7</button>
-                <button onclick="" class="calc__btn">8</button>
-                <button onclick="" class="calc__btn">9</button>
+                <button onclick="one()" class="calc__btn">1</button>
+                <button onclick="two()" class="calc__btn">2</button>
+                <button onclick="three()" class="calc__btn">3</button>
+                <button onclick="four()" class="calc__btn">4</button>
+                <button onclick="five()" class="calc__btn">5</button>
+                <button onclick="six()" class="calc__btn">6</button>
+                <button onclick="seven()" class="calc__btn">7</button>
+                <button onclick="eight()" class="calc__btn">8</button>
+                <button onclick="nine()" class="calc__btn">9</button>
             </section>
 
             <section>
-                <button onclick="" class="calc__btn">0</button>
-                <button onclick="" class="calc__btn">.</button>
-                <button onclick="" class="calc__btn">=</button>
+                <button onclick="zero()" class="calc__btn">0</button>
+                <button onclick="point()" class="calc__btn">.</button>
+                <button onclick="equalTo()" class="calc__btn">=</button>
             </section>
 
             <section>
-                <button onclick="" class="calc__btn">%</button>
-                <button onclick="" class="calc__btn">AC</button>
-                <button onclick="" class="calc__btn">-</button>
-                <button onclick="" class="calc__btn">+</button>
-                <button onclick="" class="calc__btn">*</button>
-                <button onclick="" class="calc__btn">/</button>
+                <button onclick="percentage()" class="calc__btn">%</button>
+                <button onclick="reset()" class="calc__btn">AC</button>
+                <button onclick="minus()" class="calc__btn">-</button>
+                <button onclick="plus()" class="calc__btn">+</button>
+                <button onclick="multiply()" class="calc__btn">x</button>
+                <button onclick="divide()" class="calc__btn">/</button>
             </section>
         </main>
         <footer>

@@ -1,3 +1,10 @@
+function zero() {
+    return 0;
+}
+function one() {
+    return 1;
+}
+
 let digitOne, digitTwo, digitThree, digitFour, digitFive, digitSix, digitSeven, digitEight;
 
 
@@ -52,4 +59,4 @@ function secondNumber() {
 
     return record;
 }
-    document.getElementById("demo").innerHTML =myFunction();
+    document.getElementById("demo").innerHTML = zero() || one();
