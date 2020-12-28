@@ -1,9 +1,48 @@
+class Calculator {
+    constructor(displayTextElement){
+        this.displayTextElement = displayTextElement;
+        this.clearAll()
+    }
+
+    clearAll(){
+        this.display = ''
+        this.operator = undefined
+    }
+    return(){
+
+    }
+    appendNumber(number){
+        this.display = number;
+    }
+    pressOperator(operator){
+
+    }
+    compute(){
+
+    }
+    updateDisplay(){
+        this.displayTextElement.innerText = this.display;
+    }
+}
+
+
+
+
 const allClear = document.querySelector('all-clear');
 const equalsTo = document.querySelector('equals');
 const backSpace = document.querySelector('back-space');
 const operators = document.querySelectorAll('operator');
 const numbers = document.querySelectorAll('number');
 const display = document.querySelector('display');
+
+const calculator = new Calculator(displayTextElement);
+
+numbers.forEach(calcButton => {
+    calcButton.addEventListener('click', () => {
+        calculator.appendNumber(calcButton.innerText)
+        calculator.updateDisplay()
+    })
+})
 
 // function zero() {
 //     return 0;
