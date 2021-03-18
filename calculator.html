@@ -7,50 +7,30 @@
     <title>Calculator</title>
 </head>
 <body>
-    <section class="calc">
-        <header class="calc__top">
-            <p id="display" class="calc__top-display"></p>
-        </header>
-        <main class="calc__middle">
-            <section class="calc__middle-flex">
-                <button id="number" class="calc__btn">1</button>
-                <button id="number" class="calc__btn">2</button>
-                <button id="number" class="calc__btn">3</button>
-                <button id="number" class="calc__btn">4</button>
-                <button id="number" class="calc__btn">5</button>
-                <button id="number" class="calc__btn">6</button>
-                <button id="number" class="calc__btn">7</button>
-                <button id="number" class="calc__btn">8</button>
-                <button id="number" class="calc__btn">9</button>
-            </section>
-
-            <section>
-                <button id="number" class="calc__btn">0</button>
-                <button id="number" class="calc__btn">.</button>
-                <button id="equals" class="calc__btn">=</button>
-            </section>
-
-            <section>
-                <button id="operation" class="calc__btn">%</button>
-                <button id="all-clear" class="calc__btn">AC</button>
-                <button id="back-space" class="calc__btn">Back Space</button>
-                <button id="operator" class="calc__btn">-</button>
-                <button id="operator" class="calc__btn">+</button>
-                <button id="operator" class="calc__btn">x</button>
-                <button id="operator" class="calc__btn">/</button>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <p>Basic Calculator</p>
-            </div>
-        </footer>
-    </section>
-    
-    <div><p>Click the button and start calculating.</p>
-
-        <!-- <button onclick="myFunction()">Go</button> -->
-        
+    <div class="calculator">
+        <div class="calculator__output">
+            <div data-previous-operand class="calculator__previous-operand"></div>
+            <div data-current-operand class="calculator__current-operand"></div>
+        </div>
+        <button class="calculator__btn" data-number>1</button>
+        <button class="calculator__btn" data-number>2</button>
+        <button class="calculator__btn" data-number>3</button>
+        <button class="calculator__btn" data-number>4</button>
+        <button data-all-clear class="calculator__btn">AC</button>
+        <button class="calculator__btn" data-delete>DEL</button>
+        <button class="calculator__btn" data-number>5</button>
+        <button class="calculator__btn" data-number>6</button>
+        <button class="calculator__btn" data-number>7</button>
+        <button class="calculator__btn" data-number>8</button>
+        <button class="calculator__btn" data-operation>÷</button>
+        <button class="calculator__btn" data-operation>*</button>
+        <button class="calculator__btn" data-number>9</button>
+        <button class="calculator__btn" data-number>0</button>
+        <button class="calculator__btn" data-number>.</button>
+        <button data-equals class="calculator__btn">=</button>
+        <button class="calculator__btn" data-operation>+</button>
+        <button class="calculator__btn" data-operation>-</button>
+    </div>
         <script src="./calculator.js"></script>
 </body>
 </html>
